@@ -1,0 +1,24 @@
+/* Final typography and interaction polish shared by the marketing site and POS demo. */
+.website .section-heading p,
+.website .hero-description,
+.website .product-story > p,
+.website .benefit-row p,
+.website .about-copy p,
+.website .contact-details-card > p { font-size: 15px !important; line-height: 1.8; }
+.website .contact-action-copy b { font-size: 16px !important; }
+.website .contact-action-copy small { font-size: 13px !important; }
+.website .contact-placeholder span { font-size: 12px !important; }
+.website .contact-placeholder b { font-size: 15px !important; }
+.website .contact-placeholder a { color: inherit; }
+.website .contact-details-kicker { font-size: 10px; }
+.website .pricing-feature-list li { font-size: 14px; }
+.website .footer-links a, .website .footer-bottom { font-size: 13px; }
+.website .nav-links a { font-size: 14px; }
+.website .button-primary, .website .nav-cta, .website .pricing-card-cta { font-size: 14px; }
+.website .contact-action { border-radius: 10px; padding: 18px; }
+.website .pricing-card { border-radius: 12px; }
+.website .benefit-row { transition: background .2s ease, padding .2s ease; }
+.website .benefit-row:hover { background: #fffaf3; padding-left: 10px; }
+.pos-app p { font-size: max(14px, 1em) !important; line-height: 1.65; }
+.pos-app button { font-size: 14px; }
+.pos-app small { font-size: max(11px, .85em); }

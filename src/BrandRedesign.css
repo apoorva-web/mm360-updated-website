@@ -1,0 +1,530 @@
+:root {
+  --brand-green: #1e2b25;
+  --brand-orange: #c2410c;
+  --brand-light-orange: #f5a26b;
+  --brand-cream: #fbf7ef;
+  --brand-muted: #6b726b;
+  --brand-white: #ffffff;
+  --brand-sans: 'Manrope', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --brand-serif: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+}
+
+.website,
+.website h1,
+.website h2,
+.website h3,
+.website h4,
+.website p,
+.website li,
+.website a,
+.website button,
+.website small {
+  font-family: var(--brand-sans);
+}
+
+.website {
+  color: var(--brand-green);
+  background: var(--brand-cream);
+}
+
+.website .announcement {
+  min-height: 36px;
+  height: auto;
+  background: var(--brand-green);
+  color: #e7ede8;
+  font-size: 12px;
+}
+
+.website .announcement-dot {
+  background: var(--brand-light-orange);
+}
+
+.website .announcement a {
+  color: #ffc799;
+  font-weight: 800;
+}
+
+.website .navbar {
+  height: 78px;
+  background: rgb(251 247 239 / 94%);
+  border-bottom: 1px solid #e6dfd2;
+  backdrop-filter: blur(18px);
+}
+
+.website .nav-inner {
+  width: min(1240px, calc(100% - 48px));
+}
+
+.website .brand {
+  display: flex;
+  align-items: center;
+  min-width: 190px;
+}
+
+.website .brand-logo {
+  display: block;
+  width: 178px;
+  max-width: 100%;
+  height: auto;
+}
+
+.website .nav-links {
+  gap: 24px;
+}
+
+.website .nav-mobile-cta {
+  display: none;
+}
+
+.website .nav-links a {
+  color: #475149;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.website .nav-links a:hover,
+.website .nav-links a.active {
+  color: var(--brand-orange);
+}
+
+.website .nav-cta,
+.website .button-primary,
+.website .pricing-card-cta,
+.website .final-cta-primary,
+.website .home-final-actions .button-primary,
+.website .mach-page-cta-actions .button-primary,
+.website .product-hero-actions .button-primary {
+  color: #fff;
+  background: var(--brand-orange);
+  border: 1px solid var(--brand-orange);
+  border-radius: 9px;
+  box-shadow: 0 10px 24px rgb(194 65 12 / 15%);
+  transition: transform .22s ease, background .22s ease, box-shadow .22s ease;
+}
+
+.website .nav-cta:hover,
+.website .button-primary:hover,
+.website .pricing-card-cta-featured:hover,
+.website .final-cta-primary:hover,
+.website .home-final-actions .button-primary:hover,
+.website .mach-page-cta-actions .button-primary:hover,
+.website .product-hero-actions .button-primary:hover {
+  background: #9f3509;
+  border-color: #9f3509;
+  box-shadow: 0 14px 30px rgb(194 65 12 / 22%);
+  transform: translateY(-2px);
+}
+
+.website .button-secondary,
+.website .home-final-actions .button-secondary {
+  color: var(--brand-green);
+  background: var(--brand-white);
+  border: 1px solid #dcd5c8;
+  border-radius: 9px;
+}
+
+.website .hero-section {
+  background:
+    radial-gradient(circle at 82% 20%, rgb(245 162 107 / 18%), transparent 18%),
+    radial-gradient(circle at 12% 90%, rgb(30 43 37 / 5%), transparent 18%),
+    var(--brand-cream);
+}
+
+.website .hero-section::after {
+  border-color: rgb(194 65 12 / 12%);
+  box-shadow: 0 0 0 35px rgb(194 65 12 / 3%), 0 0 0 70px rgb(194 65 12 / 2%);
+}
+
+.website .hero-inner {
+  min-height: 680px;
+}
+
+.website .hero-copy h1,
+.website .section-heading h2,
+.website .story-copy h2,
+.website .home-benefits-heading h2,
+.website .home-mach-copy h2,
+.website .home-final-inner h2,
+.website .product-hero-copy h1,
+.website .capability-copy h2,
+.website .about-copy h2,
+.website .ai-showcase-intro h2,
+.website .pricing-card h3,
+.website .mach-page-cta-inner h2,
+.website .final-cta-inner h2 {
+  color: var(--brand-green);
+  font-family: var(--brand-serif);
+  letter-spacing: -.045em;
+}
+
+.website .hero-copy h1 em,
+.website .story-copy h2 em,
+.website .home-benefits-heading h2 em,
+.website .home-final-inner h2 em,
+.website .product-hero-copy h1 em,
+.website .ai-showcase-intro h2 em {
+  color: var(--brand-orange);
+}
+
+.website .hero-description,
+.website .story-copy p,
+.website .home-mach-copy p,
+.website .capability-copy p,
+.website .about-copy p,
+.website .section-heading p {
+  color: var(--brand-muted);
+}
+
+.website .hero-kicker,
+.website .eyebrow,
+.website .text-arrow-link,
+.website .ai-showcase-kicker,
+.website .pricing-kicker,
+.website .pricing-plan-label {
+  color: var(--brand-orange);
+}
+
+.website .kicker-icon,
+.website .benefit-editorial-icon,
+.website .story-kot-float > span {
+  color: #fff;
+  background: var(--brand-orange);
+}
+
+.website .hero-proof b {
+  color: var(--brand-green);
+}
+
+.website .dashboard-window,
+.website .story-device,
+.website .pos-demo,
+.website .ai-chat-window,
+.website .pricing-card,
+.website .contact-action,
+.website .contact-details-card {
+  border-color: #ded6c8;
+  box-shadow: 0 24px 64px rgb(30 43 37 / 10%);
+}
+
+.website .dashboard-live,
+.website .topbar-demo-status,
+.website .story-device-bar small {
+  color: var(--brand-green);
+}
+
+.website .home-product-story,
+.website .capability-story,
+.website .about-section,
+.website .home-final-cta,
+.website .mach-page-cta {
+  background: var(--brand-white);
+}
+
+.website .home-benefits,
+.website .demo-section,
+.website .pricing-section,
+.website .ai-showcase-section,
+.website .contact-section,
+.website .product-hero {
+  background: var(--brand-cream);
+}
+
+.website .benefit-editorial-grid,
+.website .benefit-editorial-grid article,
+.website .home-benefits-heading {
+  border-color: #ddd7ca;
+}
+
+.website .benefit-editorial-icon {
+  box-shadow: 10px 10px 0 #f1d1bc;
+}
+
+.website .benefit-editorial-grid h3,
+.website .story-copy h2,
+.website .capability-copy h2 {
+  color: var(--brand-green);
+}
+
+.website .benefit-editorial-grid p,
+.website .capability-copy li {
+  color: var(--brand-muted);
+}
+
+.website .benefit-editorial-index {
+  color: #aaa99f;
+}
+
+.website .home-mach,
+.website .why-section,
+.website .final-cta-section,
+.website .footer {
+  background: var(--brand-green);
+}
+
+.website .home-mach-copy h2 em,
+.website .why-section .section-heading h2 em,
+.website .final-cta-inner h2 em {
+  color: var(--brand-light-orange);
+}
+
+.website .mach-orbit-visual {
+  background:
+    radial-gradient(circle, rgb(245 162 107 / 24%) 0 1px, transparent 2px) 0 0 / 28px 28px,
+    radial-gradient(circle at center, #314439 0, #26362e 68%, var(--brand-green) 69%);
+  border-color: rgb(255 255 255 / 8%);
+}
+
+.website .mach-orb {
+  background: linear-gradient(145deg, var(--brand-orange), #87310d);
+  box-shadow: 0 0 70px rgb(194 65 12 / 38%);
+}
+
+.website .mach-answer span,
+.website .text-arrow-link.light,
+.website .why-card-note,
+.website .why-scope-note {
+  color: var(--brand-light-orange);
+}
+
+.website .why-card {
+  background: rgb(255 255 255 / 4%);
+  border-color: rgb(255 255 255 / 8%);
+}
+
+.website .why-card-featured {
+  background: rgb(245 162 107 / 8%);
+  border-color: rgb(245 162 107 / 22%);
+}
+
+.website .why-card h3,
+.website .why-card-copy b,
+.website .why-card-copy p,
+.website .why-card-number,
+.website .why-visual span {
+  color: #f7f3ec;
+}
+
+.website .why-card-copy p {
+  color: #ced5cf;
+}
+
+.website .why-visual span {
+  background: rgb(255 255 255 / 7%);
+  border-color: rgb(255 255 255 / 10%);
+}
+
+.website .ai-chat-topbar {
+  background: var(--brand-green);
+}
+
+.website .ai-chat-mark,
+.website .ai-card-icon,
+.website .ai-addon-label,
+.website .pricing-plan-mark {
+  color: var(--brand-orange);
+  background: #fff1e7;
+  border-color: #f1d1bd;
+}
+
+.website .ai-chat-sample-badge,
+.website .pricing-featured-badge {
+  color: #fff;
+  background: var(--brand-orange);
+}
+
+.website .ai-question-picker button:hover,
+.website .ai-question-picker button[aria-pressed="true"] {
+  color: var(--brand-orange);
+  background: #fff6ef;
+  border-color: #ecc0a2;
+}
+
+.website .pricing-card-featured {
+  border-color: var(--brand-orange);
+  box-shadow: 0 24px 54px rgb(194 65 12 / 12%), inset 0 3px 0 var(--brand-orange);
+}
+
+.website .pricing-period-toggle button.pricing-period-active {
+  background: var(--brand-green);
+}
+
+.website .pricing-period-toggle button span {
+  color: var(--brand-orange);
+  background: #ffe8d7;
+}
+
+.website .contact-action:hover,
+.website .pricing-card:hover,
+.website .pricing-addon-card:hover,
+.website .why-card:hover {
+  border-color: #e0b090;
+}
+
+.website .footer {
+  color: #edf1ed;
+  border-top: 1px solid rgb(255 255 255 / 8%);
+}
+
+.website .footer-main {
+  width: min(1240px, 100%);
+  grid-template-columns: 1.25fr 170px 170px 220px;
+  gap: 28px;
+}
+
+.website .footer .brand-logo {
+  filter: brightness(0) invert(1);
+  opacity: .95;
+}
+
+.website .footer-brand-block p,
+.website .footer-links a,
+.website .footer-bottom {
+  color: #bac6bd;
+}
+
+.website .footer-links > span {
+  color: var(--brand-light-orange);
+}
+
+.website .footer-links a:hover {
+  color: #fff;
+}
+
+.website .footer-bottom {
+  width: min(1240px, 100%);
+  border-top-color: rgb(255 255 255 / 12%);
+}
+
+.inner-page-back-bar {
+  background: var(--brand-cream);
+  border-bottom: 1px solid #e5ddcf;
+}
+
+.back-button,
+.pos-back-button {
+  color: var(--brand-green);
+  background: #fff;
+  border-color: #ddd5c7;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgb(30 43 37 / 5%);
+}
+
+.back-button:hover,
+.pos-back-button:hover {
+  color: var(--brand-orange);
+  background: #fffaf5;
+  border-color: #e0b795;
+}
+
+.pos-app {
+  --pos-orange: var(--brand-orange);
+  --pos-orange-dark: #9f3509;
+  --pos-ink: var(--brand-green);
+  --pos-canvas: #f7f4ed;
+  --pos-line: #e5dfd3;
+  font-family: var(--brand-sans);
+  background: #f7f4ed;
+}
+
+.pos-app .pos-sidebar {
+  background: var(--brand-green);
+  border-right: 1px solid rgb(255 255 255 / 7%);
+}
+
+.pos-app .pos-nav-active,
+.pos-app .pos-nav-active:hover {
+  background: #314439;
+}
+
+.pos-app .pos-nav-active::before {
+  background: var(--brand-light-orange);
+}
+
+.pos-app .pos-topbar {
+  background: rgb(255 255 255 / 96%);
+  border-bottom-color: #e5dfd3;
+}
+
+.pos-app .panel,
+.pos-app .metric-card {
+  border-color: #e5dfd3;
+  border-radius: 10px;
+}
+
+.pos-app .button-primary {
+  background: var(--brand-orange);
+}
+
+.pos-app .button-primary:hover:not(:disabled) {
+  background: #9f3509;
+}
+
+@media (max-width: 980px) {
+  .website .footer-main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .website .footer-brand-block {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 680px) {
+  .website .announcement {
+    min-height: 42px;
+    padding: 7px 16px;
+  }
+
+  .website .navbar {
+    height: 66px;
+  }
+
+  .website .nav-inner {
+    width: calc(100% - 32px);
+  }
+
+  .website .brand {
+    min-width: 155px;
+  }
+
+  .website .brand-logo {
+    width: 150px;
+  }
+
+  .website .nav-cta {
+    display: none;
+  }
+
+  .website .nav-mobile-cta {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 12px 20px 18px;
+    color: #fff;
+    background: var(--brand-orange);
+    border-radius: 8px;
+  }
+
+  .website .footer-main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .website .footer-contact {
+    grid-column: 1 / -1;
+  }
+
+  .pos-app .pos-topbar {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .pos-app .pos-back-button {
+    order: -1;
+  }
+
+  .pos-app .pos-breadcrumb {
+    flex: 1;
+  }
+}

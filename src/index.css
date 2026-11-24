@@ -1,0 +1,25 @@
+:root {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: #29251f;
+  background: #fffdf9;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #c64e2a;
+  outline-offset: 3px;
+}
